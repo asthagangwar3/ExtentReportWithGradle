@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:6.9.10'
+    implementation 'com.relevantcodes:extentreports:2.40.2'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'org.slf4j:slf4j-api:1.7.18'
+    implementation 'ch.qos.logback:logback-core:1.1.6'
+    implementation 'ch.qos.logback:logback-classic:1.1.6'
+}
+
+test {
+    useTestNG() {
+        suiteXmlFiles << new File(rootDir, "src/test/resources/testng_by_methods.xml")
+        useDefaultListeners = false
+    }
+}

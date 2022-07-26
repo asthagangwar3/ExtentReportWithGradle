@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testng_by_classes.xml" verbose="1" parallel="classes" thread-count="10" >
+    <parameter name="suiteFolder" value="byclasses"/>
+    <listeners>
+        <listener class-name="qa.test.listeners.TestNGSuiteListener" />
+        <!-- <listener class-name="qa.test.listeners.DebugTestNGListenerOrder" /> -->
+    </listeners>
+    <test name="Parallel Classes Suite">
+        <classes>
+            <class name="qa.test.tests.classes.ParallelClassesTest1" />
+            <class name="qa.test.tests.classes.ParallelClassesTest2" />
+            <class name="qa.test.tests.classes.ParallelClassesTest3" />
+        </classes>
+    </test>
+</suite>
