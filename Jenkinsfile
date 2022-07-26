@@ -13,7 +13,7 @@ pipeline {
 	  }
 	  stage ('Git Checkout') {
            steps {
-                 checkout([$class: 'GitSCM', branches: [[name: '*']], extensions: [], 
+                 checkout([$class: 'GitSCM', branches: [[name: 'master']], extensions: [], 
 			   userRemoteConfigs: [[url: 'https://github.com/asthagangwar3/ExtentReportWithGradle.git/']]])
                  }
 	     }
