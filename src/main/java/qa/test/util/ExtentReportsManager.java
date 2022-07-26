@@ -52,7 +52,7 @@ public class ExtentReportsManager
     public static void alterReportLocation(String suiteName)
     {
         reportLocation = "build" + File.separator + "reports" + File.separator + "extent"
-                + File.separator + suiteName + File.separator + "index.html";
+                + File.separator + suiteName + File.separator + "ExtentReports.html";
     }
 
     public static void nullifyReportLocation()
