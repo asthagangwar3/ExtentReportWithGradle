@@ -12,7 +12,7 @@ import java.util.Date;
 public class ExtentReportsManager
 {
     private static ExtentReports extentReports;
-    public static String DEFAULT_REPORT_LOCATION = "build" + File.separator + "reports" + File.separator + "extent" + File.separator + "index.html";
+    public static String DEFAULT_REPORT_LOCATION = "build" + File.separator + "reports" + File.separator + "extent" + File.separator + "ExtentReports.html";
     private static String reportLocation;
 
     public synchronized static ExtentReports getReporter()
