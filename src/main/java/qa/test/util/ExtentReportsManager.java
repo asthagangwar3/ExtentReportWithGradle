@@ -49,11 +49,11 @@ public class ExtentReportsManager
      * For use in a BeforeSuite call to alter report location on a per-suite basis.
      * @param suiteName
      */
-   /* public static void alterReportLocation(String suiteName)
+    public static void alterReportLocation(String suiteName)
     {
-        reportLocation = "build" + File.separator + "reports" + File.separator + "extent"
+       String reportsLocation = "build" + File.separator + "reports" + File.separator + "extent"
                 + File.separator + suiteName + File.separator + "ExtentReports.html";
-    }*/
+    }
 
     public static void nullifyReportLocation()
     {
