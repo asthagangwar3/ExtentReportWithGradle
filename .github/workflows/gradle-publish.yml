@@ -21,5 +21,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-       repository : https://github.com/asthagangwar3/library-management-system.git
+       repository : asthagangwar3/library-management-system
    
