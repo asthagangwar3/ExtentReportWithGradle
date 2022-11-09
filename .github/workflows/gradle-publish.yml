@@ -20,7 +20,19 @@ jobs:
       packages: write
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
       with:
        repository : asthagangwar3/library-management-system
+      
+    - name: Cypress Run
+      uses: cypress-io/github-action@v4
+      with:
+          # we have already installed all dependencies above
+          browser: chrome
+          record: true
+      env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+       
+       
    
