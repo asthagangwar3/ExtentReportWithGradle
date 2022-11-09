@@ -23,7 +23,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-       repository : asthagangwar3/library-management-system
+       repository : asthagangwar3/Dotnet_Core_3.1
       
     - name: Cypress Run
       uses: cypress-io/github-action@v4
