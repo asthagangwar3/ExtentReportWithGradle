@@ -23,8 +23,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-       repository : asthagangwar3/Dotnet_Core_3.1
-       token: ${{ secrets.GH_PAT }}
+       repository : asthagangwar3/PHP_SONARQUBE_POC
       
     - name: Cypress Run
       uses: cypress-io/github-action@v4
